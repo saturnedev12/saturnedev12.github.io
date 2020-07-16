@@ -84,7 +84,7 @@ p {
 }
 
 img {
-	max-width: 100%;
+	max-width: 60%;
 }
 
 input:focus,
@@ -143,7 +143,7 @@ ol {
 }
 
 .spad {
-	padding-top: 100px;
+	padding-top: 0px;
 	padding-bottom: 100px;
 }
 
@@ -384,7 +384,7 @@ ol {
 
 .header__nav {
 	text-align: right;
-	padding: 32px 0 33px;
+	padding: 42px 0 33px;
 }
 
 .header__logo {
@@ -2250,7 +2250,7 @@ ol {
 
 .latest {
 	padding-bottom: 70px;
-	padding-top: 160px;
+	padding-top: 10px;
 }
 
 .latest .section-title {
