@@ -61,32 +61,7 @@
 
     <!-- Header Section Begin -->
     <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <ul class="header__top__widget">
-                            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
-                            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="header__top__right">
-                            <div class="header__top__phone">
-                                <i class="fa fa-phone"></i>
-                                <span>(+12) 345 678 910</span>
-                            </div>
-                            <div class="header__top__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
@@ -98,17 +73,17 @@
                     <div class="header__nav">
                         <nav class="header__menu">
                             <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./car.html">Cars</a></li>
-                                <li><a href="./blog.html">Blog</a></li>
-                                <li class="active"><a href="#">Pages</a>
+                                <li class="active"><a href="./index.html">Accueil</a></li>
+                                <li><a href="./car.html">Boutique</a></li>
+                                <li><a href="./blog.html">Evénementiel</a></li>
+                                <!-- <li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="./about.html">About Us</a></li>
                                         <li><a href="./car-details.html">Car Details</a></li>
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
-                                </li>
-                                <li><a href="./about.html">About</a></li>
+                                </li> -->
+                                <li><a href="./about.html">A propos</a></li>
                                 <li><a href="./contact.html">Contact</a></li>
                             </ul>
                         </nav>
@@ -117,7 +92,34 @@
                                 <a href="#"><i class="fa fa-cart-plus"></i></a>
                                 <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
                             </div>
-                            <a href="#" class="primary-btn">Add Car</a>
+                            <!--button de connection qui affiche se connecter quand on poseède un conte affiche un logo de paramettre-->
+                            <!-- buton connection en modale -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                se connecter
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+                            <!-- fin du button -->
                         </div>
                     </div>
                 </div>
@@ -129,19 +131,20 @@
     </header>
     <!-- Header Section End -->
 
+    
     <!-- Blog Details Hero Begin -->
     <section class="blog-details-hero spad set-bg" data-setbg="img/blog/details/details-hero-bg.jpg">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-10">
                     <div class="blog__details__hero__text">
-                        <span class="label">Car Dealer, BMW</span>
-                        <h2>An Update on Adobe Fuse as Adobe Moves to the Future of 3D & AR Development</h2>
+                        <span class="label">Space événementiel</span>
+                        <h2>Programme de prière et d'adoration</h2>
                         <ul>
-                            <li><img src="img/blog/details/details-hero-avatar.png" alt=""> <span>By Evelyn Lane</span>
+                            <li><img src="img/blog/details/details-hero-avatar.png" alt=""> <span>Henry thierry</span>
                             </li>
                             <li><i class="fa fa-calendar-o"></i> <span>Dec 17, 2019</span></li>
-                            <li><i class="fa fa-edit"></i> <span>2 Comment</span></li>
+                            <li><i class="fa fa-edit"></i> <span>Cocody saint jean</span></li>
                         </ul>
                     </div>
                 </div>
@@ -172,10 +175,11 @@
                             “nonce” security key reduces the chances of a malicious hacker finding a way into your admin
                             panel.</p>
                     </div>
-                    <div class="blog__details__quote">
+                    <!-- <div class="blog__details__quote">
                         <p>Though a major upgrade to 2.1 is due out soon, the 2.0.3 is something you should definitely
                             download and install if only</p>
-                    </div>
+                    </div> -->
+
                     <div class="blog__details__desc">
                         <p>In addition to the 2.0.3 install, you should be aware that some bugs have already been found,
                             and that a plugin will need to be installed to repair those bugs. If you modify any of the
@@ -184,7 +188,9 @@
                             to locate changes; if the only changes you find are your own, then you’re fine, and
                             otherwise you’ll need to merge them manually into the</p>
                     </div>
-                    <div class="blog__details__share">
+
+
+                    <!-- <div class="blog__details__share">
                         <a href="#" class="blog__details__share__item">
                             <i class="fa fa-facebook"></i>
                             <span>Share</span>
@@ -201,8 +207,10 @@
                             <i class="fa fa-linkedin"></i>
                             <span>Share</span>
                         </a>
-                    </div>
-                    <div class="blog__details__author">
+                    </div> -->
+
+
+                    <!-- <div class="blog__details__author">
                         <div class="blog__details__author__pic">
                             <img src="img/blog/details/author.png" alt="">
                         </div>
@@ -211,8 +219,10 @@
                             <p>Another thing that I don’t really like about them is that they’re such sideline actors,
                                 lacking the abilities to participate actively.</p>
                         </div>
-                    </div>
-                    <div class="blog__details__btns">
+                    </div> -->
+
+
+                    <!-- <div class="blog__details__btns">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="row">
@@ -239,8 +249,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="blog__details__comment">
+                    </div> -->
+
+                    <!-- <div class="blog__details__comment">
                         <h4>12 Comment</h4>
                         <div class="blog__details__comment__item">
                             <div class="blog__details__comment__item__pic">
@@ -265,8 +276,9 @@
                                 <a href="#">Reply</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="blog__details__comment__form">
+                    </div> -->
+
+                    <!-- div class="blog__details__comment__form">
                         <h4>Leave A Reply</h4>
                         <form action="#">
                             <div class="input-list">
@@ -289,7 +301,9 @@
                             </div>
                             <button type="submit" class="site-btn">Submit Now</button>
                         </form>
-                    </div>
+                    </div> -->
+
+
                 </div>
             </div>
         </div>

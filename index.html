@@ -96,7 +96,7 @@
                             <!--button de connection qui affiche se connecter quand on poseède un conte affiche un logo de paramettre-->
                             <!-- buton connection en modale -->
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+            <button type="button" class="site-btn1" data-toggle="modal" data-target="#staticBackdrop">
                 se connecter
             </button>
             
@@ -105,18 +105,35 @@
                 <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <h5 class="modal-title text-center" id="staticBackdropLabel">Se connecter</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
                     <div class="modal-body">
-                    ...
+                        <!-- Ajout du formulaire de connexion -->
+                        <form action="#" class="modal-form">
+                            <div class="input-list">
+                                <div class="modal-body-input">
+                                    <input type="email" name="email" id="email" placeholder="email">
+                                </div>
+                                <div class="modal-body-input" >
+                                    <input type="password" name="password" id="password" placeholder="Mot de passe">
+                                </div>
+                                
+                            </div>
+                            <p>
+                                <a href="#">Mot de passe oublié?</a>
+                            </p>
+                            <button type="submit" class="site-btn">Connexion</button>
+                        </form>
+
+                        <p>Avez un compte ?<a href="#"> Creer un compte</a></p>
                     </div>
-                    <div class="modal-footer">
+                   <!--  <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
+                    </div> -->
                 </div>
                 </div>
             </div>
