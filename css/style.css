@@ -2702,6 +2702,47 @@ ol {
 	margin-right: 4px;
 }
 
+.form-content{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.form-content hr{
+	margin: 20px 0;
+}
+
+.form-row input{
+	width: 100%;
+	height: 35px;
+	border-radius: 0px;
+	border: 1px solid #b8b8b8;
+	padding: 4px;
+}
+
+.form-row input[type=file]{
+	height: 35px;
+	border: none;
+}
+
+.form-row input:focus{
+	background-color: aliceblue;
+	border: 1.2px solid #0179B6;
+}
+
+
+@media screen and (max-width: 867px){
+	.form-content{
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 709px){
+	.form-content{
+		width: 60%;
+		margin: 0 auto;
+	}
+}
 /*---------------------
   Blog Hero
 -----------------------*/
