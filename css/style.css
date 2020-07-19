@@ -2774,6 +2774,10 @@ textarea{
 	text-align: center;
 	border: 1px solid #1e1e1e;
   }
+
+  .m0{
+	  margin: 0;
+  }
   .wrap-custom-file input[type="file"] {
 	position: absolute;
 	top: 0;
