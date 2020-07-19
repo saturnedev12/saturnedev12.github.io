@@ -2711,7 +2711,7 @@ ol {
 	margin: 20px 0;
 }
 
-.form-row input{
+.form-row input, textarea{
 	width: 100%;
 	height: 35px;
 	border-radius: 0px;
@@ -2729,6 +2729,22 @@ ol {
 	border: 1.2px solid #0179B6;
 }
 
+textarea{
+	height: 160px;
+	padding: 10px;
+}
+
+.list{
+	width: 100%;
+	border-radius: none;
+}
+
+.select{
+	width: 100%;
+	height: 35px;
+	border-radius: 0px;
+	border: 1px solid #b8b8b8;
+}
 
 
 /* upload image ***********************************************************/
