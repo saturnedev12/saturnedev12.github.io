@@ -1061,6 +1061,7 @@ ol {
 	background: #f7f7f7;
 	padding: 12px 30px;
 	margin-bottom: 30px;
+	display: none;
 }
 
 .car__filter__option .car__filter__option__item.car__filter__option__item--right {
@@ -1205,7 +1206,7 @@ ol {
 	font-size: 15px;
 	color: #ffffff;
 	font-weight: 700;
-	background: #4971FF;
+	background: #0fa133;
 	display: inline-block;
 	padding: 12px 22px 10px;
 	border-radius: 2px 0 0 2px;
@@ -1436,6 +1437,24 @@ ol {
 	text-align: center;
 }
 
+.btn-readmore{
+	background-color:  #2c85ae;
+	color: white;
+	font-size: 19px;
+	padding: 8px 11px;
+	transition: all .3s;
+}
+
+.btn-readmore:hover{
+	background-color:  #fff;
+	color: #2c85ae;
+	font-size: 19px;
+	padding: 8px 11px;
+	border: 1px solid #2c85ae;
+	transition: all .3s;
+}
+
+
 /*---------------------
   Footer
 -----------------------*/
@@ -1446,7 +1465,7 @@ ol {
 }
 
 .footer__contact {
-	padding-bottom: 60px;
+	padding-bottom: 16px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	margin-bottom: 65px;
 }
@@ -1485,8 +1504,17 @@ ol {
 	color: #db2d2e;
 }
 
-.footer__contact__option .option__item i {
-	margin-right: 5px;
+.footer__contact__option .option__item i a{
+	color: #ffffff!important;
+}
+
+
+.option__item-link{
+	color: white;
+}
+
+.option__item-email, .option__item-email:hover{
+	color: #db2d2e;
 }
 
 .footer__about {
@@ -1500,11 +1528,19 @@ ol {
 
 .footer__logo {
 	margin-bottom: 20px;
+	height: 80px;
+}
+.footer__logo a img{
+	height: 80px;
+	width: 100%;
+	object-fit: cover;
 }
 
 .footer__logo a {
 	display: inline-block;
 }
+
+
 
 .footer__social {
 	margin-bottom: 20px;
@@ -1526,20 +1562,30 @@ ol {
 	margin-right: 0;
 }
 
+
+.footer__social a i {
+	color: white;
+}
+
+
 .footer__social a.facebook {
 	background: #324975;
+
 }
 
 .footer__social a.twitter {
 	background: #2C85AE;
+
 }
 
 .footer__social a.google {
 	background: #DC4438;
+
 }
 
 .footer__social a.skype {
 	background: #3EAFF0;
+
 }
 
 .footer__copyright__text {
@@ -2848,7 +2894,7 @@ textarea{
   }
   .wrap-custom-file label.file-ok .fa {
 	display: none;
-  
+}
 
 /* upload image ***********************************************************/
 
@@ -2869,23 +2915,24 @@ textarea{
   Blog Hero
 -----------------------*/
 
-.blog-details-hero {
+.blog-details-event{
 	padding-top: 80px;
 	padding-bottom: 400px;
 }
 
-.blog__details__hero__text {
-	text-align: center;
+.blog-details-event {
+	text-align: center!important;
+	color: white;
 }
 
-.blog__details__hero__text .label {
+.blog-details-event .label {
 	font-size: 15px;
 	color: #db2d2e;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-.blog__details__hero__text h2 {
+.blog-details-event h2 {
 	font-size: 40px;
 	color: #ffffff;
 	font-weight: 700;
@@ -2894,7 +2941,7 @@ textarea{
 	margin-bottom: 20px;
 }
 
-.blog__details__hero__text ul li {
+.blog-details-event ul li {
 	list-style: none;
 	font-size: 15px;
 	color: #ffffff;
@@ -2902,12 +2949,12 @@ textarea{
 	margin-right: 90px;
 }
 
-.blog__details__hero__text ul li span {
+.blog-details-event ul li span {
 	display: inline-block;
 	position: relative;
 }
 
-.blog__details__hero__text ul li span::after {
+.blog-details-event ul li span::after {
 	position: absolute;
 	right: -48px;
 	top: 3px;
@@ -2917,22 +2964,22 @@ textarea{
 	content: "";
 }
 
-.blog__details__hero__text ul li:last-child {
+.blog-details-event ul li:last-child {
 	margin-right: 0;
 }
 
-.blog__details__hero__text ul li:last-child span::after {
+.blog-details-event ul li:last-child span::after {
 	display: none;
 }
 
-.blog__details__hero__text ul li img {
+.blog-details-event ul li img {
 	height: 34px;
 	width: 34px;
 	border-radius: 50%;
 	margin-right: 6px;
 }
 
-.blog__details__hero__text ul li i {
+.blog-details-event ul li i {
 	color: #db2d2e;
 	margin-right: 2px;
 }
@@ -3840,10 +3887,10 @@ textarea{
 		font-size: 15px;
 		color: #353535;
 	}
-	.blog__details__hero__text ul li {
+	.blog-details-event ul li {
 		margin-right: 25px;
 	}
-	.blog__details__hero__text ul li span::after {
+	.blog-details-event ul li span::after {
 		right: -16px;
 	}
 }
@@ -3906,7 +3953,7 @@ textarea{
 	.filter__controls li {
 		margin-right: 15px;
 	}
-	.blog__details__hero__text h2 {
+	.blog-details-event h2 {
 		font-size: 35px;
 		line-height: normal;
 	}

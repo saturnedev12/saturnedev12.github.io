@@ -75,34 +75,9 @@
     </div>
     <!-- Offcanvas Menu End -->
 
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <ul class="header__top__widget">
-                            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
-                            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="header__top__right">
-                            <div class="header__top__phone">
-                                <i class="fa fa-phone"></i>
-                                <span>(+12) 345 678 910</span>
-                            </div>
-                            <div class="header__top__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+     <!-- Header Section Begin -->
+     <header class="header">
+       
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
@@ -114,18 +89,21 @@
                     <div class="header__nav">
                         <nav class="header__menu">
                             <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./car.html">Cars</a></li>
-                                <li><a href="./blog.html">Blog</a></li>
-                                <li><a href="#">Pages</a>
+                                <li class="active"><a href="./index.html">Accueil</a></li>
+                                <li><a href="./car.html">Boutique</a>
                                     <ul class="dropdown">
-                                        <li><a href="./about.html">About Us</a></li>
-                                        <li><a href="./car-details.html">Car Details</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                        <li><a href="./car.html">boutique</a></li>
+                                        <li><a href="./publie-article.html">plubiez un article</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./about.html">About</a></li>
-                                <li class="active"><a href="./contact.html">Contact</a></li>
+                                <li><a href="./blog.html">Evénementiel</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./about.html">event</a></li>
+                                        <li><a href="./publie-event.html">plubiez un event</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./about.html">A propos</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                             </ul>
                         </nav>
                         <div class="header__nav__widget">
@@ -133,7 +111,51 @@
                                 <a href="#"><i class="fa fa-cart-plus"></i></a>
                                 <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
                             </div>
-                            <a href="#" class="primary-btn">Add Car</a>
+                            <!--button de connection qui affiche se connecter quand on poseède un conte affiche un logo de paramettre-->
+                            <!-- buton connection en modale -->
+            <!-- Button trigger modal -->
+            <button type="button" class="site-btn1" data-toggle="modal" data-target="#staticBackdrop">
+                se connecter
+            </button>
+            
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="staticBackdropLabel">Se connecter</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Ajout du formulaire de connexion -->
+                                        <form action="#" class="modal-form">
+                                            <div class="input-list">
+                                                <div class="modal-body-input">
+                                                    <input type="email" name="email" id="email" placeholder="email">
+                                                </div>
+                                                <div class="modal-body-input" >
+                                                    <input type="password" name="password" id="password" placeholder="Mot de passe">
+                                                </div>
+                                                
+                                            </div>
+                                            <p>
+                                                <a href="#">Mot de passe oublié?</a>
+                                            </p>
+                                            <button type="submit" class="site-btn">Connexion</button>
+                                        </form>
+
+                                        <p>Avez un compte ?<a href="./inscription.html"> Creer un compte</a></p>
+                                    </div>
+                                <!--  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                    </div> -->
+                                </div>
+                                </div>
+                            </div>
+                            <!-- fin du button -->
                         </div>
                     </div>
                 </div>
@@ -144,17 +166,16 @@
         </div>
     </header>
     <!-- Header Section End -->
-
     <!-- Breadcrumb End -->
     <div class="breadcrumb-option set-bg" data-setbg="img/breadcrumb-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Contact Us</h2>
+                        <h2>Contact</h2>
                         <div class="breadcrumb__links">
-                            <a href="./index.html"><i class="fa fa-home"></i> Home</a>
-                            <span>Contact Us</span>
+                            <a href="./index.html"><i class="fa fa-home"></i> Accueil</a>
+                            <span>Contact</span>
                         </div>
                     </div>
                 </div>
@@ -170,13 +191,13 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__text">
                         <div class="section-title">
-                            <h2>Let’s Work Together</h2>
-                            <p>To make requests for further information, contact us via our social channels.</p>
+                            <h2>Horaire</h2>
+                            <p>Notre services disponible du lundi au samedi</p>
                         </div>
                         <ul>
-                            <li><span>Weekday</span> 08:00 am to 18:00 pm</li>
-                            <li><span>Saturday:</span> 10:00 am to 16:00 pm</li>
-                            <li><span>Sunday:</span> Closed</li>
+                            <li><span>lundi au vendredi</span> 08:00 am to 18:00 pm</li>
+                            <li><span>samedi:</span> 10:00 am to 16:00 pm</li>
+                            <li><span>dimanche:</span> fermé</li>
                         </ul>
                     </div>
                 </div>
@@ -185,15 +206,15 @@
                         <form action="#">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Name">
+                                    <input type="text" placeholder="Nom et prenoms">
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="text" placeholder="Email">
                                 </div>
                             </div>
-                            <input type="text" placeholder="Subject">
-                            <textarea placeholder="Your Question"></textarea>
-                            <button type="submit" class="site-btn">Submit Now</button>
+                            <input type="text" placeholder="sujet">
+                            <textarea placeholder="votre sujet"></textarea>
+                            <button type="submit" class="site-btn">envoyer</button>
                         </form>
                     </div>
                 </div>
@@ -202,37 +223,7 @@
     </section>
     <!-- Contact Section End -->
 
-    <!-- Contact Address Begin -->
-    <div class="contact-address">
-        <div class="container">
-            <div class="contact__address__text">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="contact__address__item">
-                            <h4>California Showroom</h4>
-                            <p>625 Gloria Union, California, United Stated Colorlib.california@gmail.com</p>
-                            <span>(+12) 456 678 9100</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="contact__address__item">
-                            <h4>New York Showroom</h4>
-                            <p>8235 South Ave. Jamestown, NewYork Colorlib.Newyork@gmail.com</p>
-                            <span>(+12) 456 678 9100</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="contact__address__item">
-                            <h4>Florida Showroom</h4>
-                            <p>497 Beaver Ridge St. Daytona Beach, Florida Colorlib.california@gmail.com</p>
-                            <span>(+12) 456 678 9100</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact Address End -->
+   
 
     <!-- Footer Section Begin -->
     <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
@@ -241,13 +232,13 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__contact__title">
-                            <h2>Contact Us Now!</h2>
+                            <h2>Contactez-nous</h2>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__contact__option">
-                            <div class="option__item"><i class="fa fa-phone"></i> (+12) 345 678 910</div>
-                            <div class="option__item email"><i class="fa fa-envelope-o"></i> Colorlib@gmail.com</div>
+                            <div class="option__item"><i class="fa fa-phone"></i><a href="tel:00000000" class="option__item-link">(+225) 00 00 00 00</a></div>
+                            <div class="option__item email"><i class="fa fa-envelope-o"></i> <a href="mailto:rentmarket@gmail.com" class="option__item-email">rentmarket@gmail.com</a></div>
                         </div>
                     </div>
                 </div>
@@ -256,61 +247,45 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="#"><img src="img/logo.png" alt="" class="logo-footer"></a>
                         </div>
-                        <p>Any questions? Let us know in store at 625 Gloria Union, California, United Stated or call us
-                            on (+1) 96 123 8888</p>
-                        <div class="footer__social">
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google"></i></a>
-                            <a href="#" class="skype"><i class="fa fa-skype"></i></a>
-                        </div>
-                        <p class="footer__copyright__text">Copyright &copy; <script>
-                                document.write(new Date().getFullYear());
-                            </script> <a href="#">Colorlib</a></p>
+                        <p>retrouvez a cocody saint jean, ou appelez le +225 000 000 00 ou laisser nous un message a adresse suivante : rentmarket@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-lg-2 offset-lg-1 col-md-3">
+                <div class="col-lg-3 offset-lg-2 col-md-6">
                     <div class="footer__widget">
                         <h5>Infomation</h5>
                         <ul>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Purchase</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Payemnt</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Shipping</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Return</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3">
-                    <div class="footer__widget">
-                        <h5>Infomation</h5>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Hatchback</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Sedan</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> SUV</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Crossover</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Accueil</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> boutique</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Evénementiel</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> contact</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer__brand">
-                        <h5>Top Brand</h5>
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
                         <ul>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Abarth</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Acura</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Alfa Romeo</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Audi</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> BMW</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Chevrolet</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Ferrari</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Honda</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> publie-article</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> publie-event</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> a propos</a></li>
+                            <!-- <li><a href="#"><i class="fa fa-angle-right"></i> Crossover</a></li> -->
                         </ul>
                     </div>
                 </div>
             </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer__copyright__text text-center">
+                <div class="footer__social">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google"></i></a>
+                    <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                </div>
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> tous droits reservé | RentMarket </p>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </div>
     </footer>
     <!-- Footer Section End -->
