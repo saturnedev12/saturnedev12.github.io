@@ -1109,6 +1109,11 @@ ol {
 	margin-bottom: 30px;
 }
 
+.car__item:hover{
+	box-shadow: 0px 0px 26px -9px rgba(0,0,0,0.75);
+	transition: all .4s;
+}
+
 .car__item__pic__slider img {
 	border-radius: 2px 2px 0 0;
 }
